@@ -1,0 +1,146 @@
+Q. What is Data?
+
+	 data is information that has been translated into a form that is efficient for movement or processing. Relative to today's computers and transmission media, data is information converted into binary digital form. It is acceptable for data to be used as a singular subject or a plural subject. Raw data is a term used to describe data in its most basic digital format.
+
+Q. What is Data Structure?
+	A data structure is a way to store and organize data in order to facilitate access and
+	modifications.
+	Data in the array is of the same composition in native a fan as type is concerned. In
+	real life we need to have different data types for example. To maintain the employee
+	Information, it should have information such as name, age, qualification, salary etc. here to
+	maintain the information of employee dissimilar data types required. Name & qualification are
+	char data type age is integer, & salary is float. All these data types cannot be expressed in a
+	single away. One may think to declare different always for each data type. Hence, always cannot
+	be useful her for tackling such mixed data types, a special feature is provided by C, known as
+	Structure.
+	Structure is a collection of heterogeneous type of data i.e. different types of data. The
+	various individual components, in a structure can be accessed is processed separately. A
+	structure is a collection of variables referenced under a name, providing a convenient means of
+	keeping related information. A structure declaration forms a template that may be used to create
+	structure objects.
+
+Q. What is Abstract Data types?
+	An abstract data type (ADT) is a mathematical model for a certain class of data structures
+	that have similar behavior or for certain data types of one or more programming languages that
+	have similar semantics. An abstract data type is defined indirectly, only by the operations that
+	may be performed on it and by mathematical constraints on the effects (and possibly cost) of
+	those operations.
+	For example, an abstract stack could be defined by three operations: push, that inserts
+	some data item onto the structure, pop, that extracts an item from it (with the constraint that each
+	pop always returns the most recently pushed item that has not been popped yet), and peek, that
+	allows data on top of the structure to be examined without removal. When analyzing the
+	efficiency of algorithms that use stacks, one may also specify that all operations take the same
+	time no matter how many items have been pushed into the stack, and that the stack uses a
+	constant amount of storage for each element.
+	Abstract data types are purely theoretical entities, used (among other things) to
+	simplify the description of abstract algorithms, to classify and evaluate data structures, and to
+	formally describe the type systems of programming languages. However, an ADT may be
+	implemented by specific data types or data structures, in many ways and in many programming
+	languages; or described in a formal specification language. ADTs are often implemented as
+	modules: the module's interface declares procedures that correspond to the ADT operations,
+	sometimes with comments that describe the constraints. This information hiding strategy allows
+	the implementation of the module to be changed without disturbing the client programs.
+
+	The term abstract data type can also be regarded as a generalized approach of a number
+	of algebraic structures, such as lattices, groups, and rings. This can be treated as part of the
+	subject area of artificial intelligence. The notion of abstract data types is related to the concept of
+	data abstraction, important in object-oriented programming and design by contract
+	methodologies for software development
+	An abstract data type is defined as a mathematical model of the data objects that make
+	up a data type as well as the functions that operate on these objects. There are no standard
+	conventions for defining them. A broad division may be drawn between "imperative" and
+	"functional" definition styles.
+
+	Advantages of abstract data types
+	1. Encapsulation
+	Abstraction provides a promise that any implementation of the ADT has certain
+	properties and abilities; knowing these is all that is required to make use of an ADT object. The
+	user does not need any technical knowledge of how the implementation works to use the ADT.
+	In this way, the implementation may be complex but will be encapsulated in a simple interface
+	when it is actually used.
+	2.Localization of change
+	Code that uses an ADT object will not need to be edited if the implementation of the
+	ADT is changed. Since any changes to the implementation must still comply with the interface,
+	and since code using an ADT may only refer to properties and abilities specified in the interface,
+	changes may be made to the implementation without requiring any changes in code where the
+	ADT is used.
+	3.Flexibility
+	Different implementations of an ADT, having all the same properties and abilities, are
+	equivalent and may be used somewhat interchangeably in code that uses the ADT. This gives a
+	great deal of flexibility when using ADT objects in different situations. For example, different
+	implementations of an ADT may be more efficient in different situations; it is possible to use
+	each in the situation where they are preferable, thus increasing overall efficiency.
+
+
+Q. Need of Data Structure in Real life.
+	Arrays : It is most used data structure. It is used in every possible situation where you need to gather similar objects at one place. Simple Example can be collection of all the book titles in a Library Management systems
+	Structures : They are Not Part of Data Structures by them self's But rather they are programming constructs through which you can build these Data structures. Most Important Use of a Structure is Gathering of Data Bits which are Similar at one place in the memory and treat them as one single entity. Taking the same Library Management System all the Details Regarding To a Book (Like Name, Author etc) can be placed at one place in memory using a structure
+	Linked Lists : They Can Work in most of the places Arrays work. But Difference in usage depends upon two choices we make when we design a systems. Those choices are 1) is Total Number of Elements in the Array Changes Frequently 2) What Run Time Efficiency You need . if Total Number of Elements in Array changes often the probably Linked list is better for that application as it is less costly to add and remove nodes in a Linked List. If you need a run time efficiency O(1) you should always go for an array as it will have every fast access speeds
+	Trees: A tree Can used always to produce a structure of hierarchic. Good Example is Any Mark up language uses Tree Structure called as DOM to Process. Most Important Link state Protocol Spanning Tree Protocol uses tree to represent network topology as a tree will not have loops.
+	Graphs : good example of graphs is a Map application which will give you shortest path from a point a to point b. this application may be using nodes to represent different points in the map and applying a Dijkstra's algorithm to find shortest path.
+	Heap : a Heap can be used any where a priority queue will do the job. For Example Huffman compression is a classic data compression algorithm that depends upon processing a set of items with integer weights by combining the two smallest to produce a new one whose weight is the sum of its two constituents. Implementing this operation is immediate, using a priority queue
+	Sorting : It a kind of algorithm which will give some order to the set of elements. sorting has many applications for example Scientific computing is often concerned with accuracy (how close are we to the true answer?). Accuracy is extremely important when we are performing millions of computations with estimated values such as the floating-point representation of real numbers that we commonly use on computers. Some numerical algorithms use priority queues and sorting to control accuracy in calculations.
+
+Q. Explore more about  Standard Template Library.
+	Standard Template Library (STL) of C++ is a collection of template classes that provide data structures such as arrays, vectors, queue, etc. STL is a library consisting of containers, algorithms, and iterators.
+
+	As STL consists of a collection of template classes, it’s a generalized library that is independent of data types.
+
+	STL mainly consists of the following components which are mentioned below:
+
+	#1) Containers
+	A container is a collection of objects of a particular type of data structure. In STL, we have various types of container classes like Array, vector, queue, deque, list, map, set, etc. These containers are generic in nature and are implemented as class templates.
+
+	Containers are dynamic in nature and can be used to hold various types of objects.
+
+	#2) Algorithms
+	Algorithms are the methods or functions that act on containers. By using algorithms provided by STL, we can have methods to search, sort, modify, transform or initialize the contents of container class objects.
+
+	Algorithms provided by STL have built-in functions that can directly operate on complex data structure instead of having to write the algorithms ourselves.
+
+	For Example, reverse() function in STL can be used to reverse the linked list.
+
+	#3) Iterators
+	Iterators are the very important and distinguishing feature of STL. Iterators are the constructs that are used to traverse through the container objects. Similar to indexes that we use to step through the arrays, Iterators act on container class objects and can be used to step through the data.
+
+	Containers
+	Containers store objects and data. They are basically template-based generic classes.
+
+	Containers in STL are divided into the following types:
+
+	#1) Sequential Containers
+	Containers the can be accessed in a sequential or linear manner are said to be sequential containers.
+
+	Arrays, Vectors, Lists, Deques are the STL containers that store data linearly and can be accessed in a sequential manner.
+
+	#2) Associative Containers
+	Associative containers are containers that implement sorted data structures. These containers are fast to search. Some of the Examples of associative containers are Map, Set, MultiMap, Multiset, etc. These containers are usually implemented in a key/value pair fashion.
+
+	#3) Container Adopters
+	Container adopters are sequential containers, however, they are implemented by providing a different interface. Thus containers like a queue, deque, stack, and priority-queue are all classified as container adopters.
+
+	Iterators
+	Iterators are constructs that we use to traverse or step through containers in STL. Iterators are very important in STL as they act as a bridge between algorithms and containers. Iterators always point to containers and in fact algorithms actually, operate on iterators and never directly on containers.
+
+	Iterators are of following types:
+
+	Input Iterators: Simplest and is used mostly in single-pass algorithms.
+	Output Iterators: Same as input iterators but not used for traversing.
+	Bidirectional Iterators: These iterators can move in both directions.
+	Forward Iterators: Can be used only in the forward direction, one step at a time.
+	Random Access Iterators: Same as pointers. Can be used to access any element randomly.
+	Algorithms
+	Algorithms are a set of functions or methods provided by STL that act on containers. These are built-in functions and can be used directly with the STL containers and iterators instead of writing our own algorithms.
+
+	STL supports the following types of algorithms:
+
+	Searching algorithms
+	Sorting algorithms
+	Modifying or manipulating algorithms
+	Non-modifying algorithms
+	Numeric algorithms
+	Min/Max algorithms
+	As each of the algorithm types suggests, these algorithms can be used to achieve different functionality in STL containers like searching, sorting, transforming the data in the containers, finding min/max value, etc.
+
+	Conclusion
+	This is the brief introduction of Standard Template Library. In our upcoming tutorials, we will learn more about each of the containers, algorithms, and iterators.
